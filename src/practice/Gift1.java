@@ -62,7 +62,7 @@ public class Gift1 {
                 int rcvd = ( giftsReceived.containsKey(str) )? giftsReceived.get(str):0;
                 int blnc = ( balanceLeftOver.containsKey(str) )? balanceLeftOver.get(str):0;
                 int leftOver = rcvd+blnc-gvn;
-                out.println(leftOver);
+                out.println( str + " " +leftOver);
             }
             out.close();
             System.exit(0);
